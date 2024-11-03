@@ -2,7 +2,7 @@
 
 You can install this package via npm:
 
-```bash
+```bash ```
 npm install  bd_state
 
 ## Usage
@@ -36,11 +36,9 @@ function DbState() {
 }
 
 ## Usage Form
-             <form onSubmit={handleSubmit}>
-                 <select
-                        required
-                        onChange={divisionChange}
-                        style={{ borderBottom: "1px solid black" }}
+        <form onSubmit={handleSubmit}>
+            <select
+                   onChange={divisionChange}
                       >
                         <option>{division_name}</option>
                         {GetDbDivision().map((division) => (
@@ -87,8 +85,9 @@ function DbState() {
                           >
                             {upazila.upazila_name}
                           </option>
-                        ))}
-             </select>
-        </form>
-#Build
+                    ))}
+         </select>
+  </form>
+
+## Build
 ```npm run build ```
