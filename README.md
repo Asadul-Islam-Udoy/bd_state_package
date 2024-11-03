@@ -4,8 +4,10 @@ You can install this package via npm:
 
 ```bash ```
 npm install  bd_state
-# This is an H1 Header
+
 ## Usage
+'import'
+```js
 import React, {useState } from "react";
 import {BdGetState} from 'bd_state';
 function DbState() {
@@ -16,6 +18,8 @@ function DbState() {
   const[divisionId,setDivisionId]=useState('');
   const[districtId,setDistrictId]=useState('');
   const[upazilaId,setUpazilaId]=useState('');
+
+
   const divisionChange = (event) => {
     const values = event.target.value.split(",");
     setDivisionId(values[0]);
@@ -33,6 +37,7 @@ function DbState() {
     setUpazilaId(values[0]);
     setUpazilaName(values[1]);
   };
+
 }
 
 ## Usage Form
