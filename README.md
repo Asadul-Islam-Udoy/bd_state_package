@@ -6,7 +6,7 @@ You can install this package via npm:
 npm install  bd_state
 
 ## Usage
-'import'
+
 ```js
 import React, {useState } from "react";
 import {BdGetState} from 'bd_state';
@@ -39,7 +39,7 @@ function DbState() {
   };
 
 }
-
+```
 ## Usage Form
         <form onSubmit={handleSubmit}>
             <select
