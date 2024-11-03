@@ -4,7 +4,6 @@ You can install this package via npm:
 
 ```bash
 npm install  bd_state
-
 ## Usage
 import React, {useState } from "react";
 import {BdGetState} from 'bd_state';
