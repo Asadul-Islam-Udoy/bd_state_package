@@ -15,9 +15,9 @@ function DbState() {
   const[divisionName,setDivisionName]=useState('');
   const[districtName,setDistrictName]=useState('');
   const[upazilaName,setUpazilaName]=useState('');
-  const[divisionId,setDivisionId]=useState('');
-  const[districtId,setDistrictId]=useState('');
-  const[upazilaId,setUpazilaId]=useState('');
+  const[divisionId,setDivisionId]=useState();
+  const[districtId,setDistrictId]=useState();
+  const[upazilaId,setUpazilaId]=useState();
 
 
   const divisionChange = (event) => {
@@ -45,7 +45,7 @@ function DbState() {
             <select
                    onChange={divisionChange}
                       >
-                        <option>{division_name}</option>
+                        <option>{divisionName}</option>
                         {GetDbDivision().map((division) => (
                           <>
                             <option
@@ -63,7 +63,7 @@ function DbState() {
                         type="text"
                         onChange={districtChange}
                       >
-                        <option>{district_name}</option>
+                        <option>{districtName}</option>
                         {GetDbDistrict(divisionId)?.map(
                           (district) => (
                             <option
@@ -82,7 +82,7 @@ function DbState() {
                         type="text"
                         onChange={upzaliaChange}
                       >
-                        <option>{upazila_name}</option>
+                        <option>{upazilaName}</option>
                         {GetDbUpazila(districtId)?.map((upazila) => (
                           <option
                             key={"upazila"}
